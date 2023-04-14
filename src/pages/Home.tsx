@@ -35,18 +35,18 @@ const Home = () => {
     return (
 
         <div className='Home pt-10'>
-            <section id='Home' className=' py-10 px-10'>
-                <div className='name-image-principal flex flex-col items-center gap-5  px-10 lg:justify-center lg:flex-row'>
+            <section id='Home' className=' py-10 md:px-10'>
+                <div className='name-image-principal flex flex-col items-center gap-5  px-5 md:px-10 lg:justify-center lg:flex-row'>
                     <img className=' max-w-[18rem] lg:max-w-[24rem] object-contain' src={LuisDev}></img>
                     <div>
-                        <h1 className=' text-5xl font-bold text-center'><span className=' text-teal-500'>Luis Araya</span> Desarrollador Full Stack</h1>
+                        <h1 className=' text-4xl sm:text-5xl font-bold text-center'><span className=' text-teal-500'>Luis Araya</span> Desarrollador Full Stack</h1>
                         <br />
                         <p className='text-center'>Soy titulado como analista programador y congele mi carrea como ingeniero informático para dedicarme a la programación de lleno. Tengo experiencia trabajando en equipo e implementando soluciones.</p>
-                        <div className='links flex pt-5'>
+                        <div className='links flex flex-col gap-5 pt-5 md:flex-row items-center'>
                             <LinkButton text='GitHub!!' color='bg-slate-900' url='https://github.com/LuisilloP' svg='github' ></LinkButton>
                             <LinkButton text='Linkedin!!' color='bg-blue-700' url='https://linkedin.com/in/luis-araya-programer' svg='linkedin' ></LinkButton>
                             <a target='_blank'
-                                className=' flex bg-slate-950 items-center px-3 text-sm gap-2 rounded-lg text-white'
+                                className=' flex w-[10rem] h-[3rem] hover:opacity-[0.9] bg-slate-950 items-center px-3 text-sm gap-2 rounded-lg text-white'
                                 href='https://firebasestorage.googleapis.com/v0/b/imagespages.appspot.com/o/LuisArayaCV.pdf?alt=media&token=50d70acf-1ff0-41ef-9577-df58f064b18a' rel="noreferrer" >
                                 <img className='w-8' src={dowloadSvg}></img>
                                 <p>Mira mi CV!!!</p>
