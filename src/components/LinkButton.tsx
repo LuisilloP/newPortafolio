@@ -23,7 +23,7 @@ type Props = {
 export const LinkButton = (props: Props) => {
     const { color, text, svg, url } = props
     return (
-        <a href={url} target='_blank' className={`h-[3rem] w-[10rem] flex justify-center gap-2 text-[1rem] text-white ${color} hover:opacity-[0.9] focus:ring-4  focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2 items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]*2 mr-2 mb-2" rel="noreferrer`} rel="noreferrer">
+        <a href={url} target='_blank' className={`h-[3rem] w-[10rem] flex justify-center gap-2 text-[1rem] text-white ${color} hover:opacity-[0.9] focus:ring-4  focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2 items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]*2 " rel="noreferrer`} rel="noreferrer">
             {svgButton[svg as keyof typeof svgButton].value}
             {text}
         </a>

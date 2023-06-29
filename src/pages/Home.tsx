@@ -75,11 +75,11 @@ const Home = () => {
                 <h1 className='text-4xl font-bold text-teal-500 text-center pb-5'>Paginas </h1>
                 <div className='container-pages min-h-[20rem] gap-5 grid lg:grid-cols-3 px-5 '>
                     <PageDesigning
-                        name='Propiedades( En construccion 🧱)'
+                        name='PropiedadesLuisDev'
                         text='Esta página posee un backend el cual se encarga de manejar usuarios y un CRUD para las propiedades de este mismo.
                         Fue diseñada con react, javascript, sass, vite, nodejs, express, materialUi y github.
                         '
-                        url="https://propiedadesluisprueba.netlify.app/"
+                        url="https://properties-luis-dev-rasp.vercel.app/"
                         image='https://firebasestorage.googleapis.com/v0/b/portafolioluisdev.appspot.com/o/PropertyPage.png?alt=media&token=66251203-2725-4f83-bf54-303290acc40b' ></PageDesigning>
 
                     <PageDesigning
