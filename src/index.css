@@ -90,7 +90,7 @@ visibility: hidden;
  }
  .clip-path-special-movile
  {
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
  }
  .clip-path-special-invert
  {
@@ -98,7 +98,7 @@ visibility: hidden;
  }
  .clip-path-special-invert-movile
  {
-  clip-path:polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+  clip-path:polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
  }
  .font-special-550
  {

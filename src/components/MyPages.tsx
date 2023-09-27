@@ -1,16 +1,31 @@
 import React from 'react'
 import PageDesigning from './PageDesigning'
 import { imagesImport } from './imagesImport'
-
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer';
 const MyPages = () => {
 
     const { reactSvg, typescript, node,
         tailwind, javascript, mongo, vite, firebase, github, sass, materialUi, nextjs } = imagesImport()
-
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.3,
+    });
     return (
         <div className='max-w-[1440px] m-auto'>
             <h2 className='text-5xl font-bold text-teal-400 text-center pb-10'>Proyectos </h2>
-            <div className='container-pages min-h-[20rem] gap-5 grid lg:grid-cols-2 px-5 '>
+
+            <motion.div
+                className='container-pages min-h-[20rem] gap-5 grid lg:grid-cols-2 px-5 '
+                ref={ref}
+                variants={
+                    {
+                        hidden: { opacity: 0, y: 75 },
+                        visible: { opacity: 1, y: 0 }
+                    }}
+                initial="hidden"
+                animate={inView ? 'visible' : 'hidden'}
+                transition={{ duration: 0.5, delay: 0.25 }}>
                 <PageDesigning
                     name='PropiedadesLuisDev'
                     text='Esta página es una pagina en la cual su función es para la venta de propiedades, esta posee un backend que se encarga de la gestión de las propiedades, creación, eliminación, modificación y lectura de estos mismos. además de un login para que el administrador tenga acceso a estas funciones.
@@ -41,8 +56,8 @@ const MyPages = () => {
                     skillsLogo={[typescript, reactSvg, nextjs, tailwind, firebase, github]}
                     url="https://boxing-club-ovalle.vercel.app/"
                     image='https://firebasestorage.googleapis.com/v0/b/portafolioluisdev.appspot.com/o/BoxingClub.webp?alt=media&token=42ce5cf1-fa61-4ac8-8ce2-825a8646d360' ></PageDesigning>
-            </div>
-        </div>
+            </motion.div>
+        </div >
     )
 }
 

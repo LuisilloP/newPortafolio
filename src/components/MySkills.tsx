@@ -10,12 +10,12 @@ const MySkills = (props: Props) => {
 
     const [ref, inView] = useInView({
         triggerOnce: true,
-        threshold: 0.5,
+        threshold: 0.3,
     });
 
     return (
         <motion.div ref={ref} className='pt-20 pb-10 '>
-            <h2 className='text-4xl font-bold text-teal-500 text-center  pb-10 pt-36  md:p-10'>Habilidades</h2>
+            <h2 className='text-4xl font-bold text-teal-500 text-center  pb-10 pt-10  md:p-10'>Habilidades</h2>
 
             <div className='flex gap-2 flex-wrap justify-center'>{props.skillsLogo.map((skill, index) =>
             (

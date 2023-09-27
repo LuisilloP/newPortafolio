@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+
 // IMAGES
 import { imagesImport } from '../components/imagesImport'
 import meme from '../assets/meme.webp'
 
 // COMPONENTS
-import PageDesigning from '../components/PageDesigning'
+
 import FormContact from '../components/FormContact'
 import MySkills from '../components/MySkills'
 import PrincipalNameImg from '../components/PrincipalNameImg'
@@ -18,14 +18,14 @@ const Home = () => {
     return (
 
         <div className='Home pt-10  text-white bg-[#1f2124] '>
-            <section id='Home' className=' py-10 md:px-10 clip-path-special bg-neutral-950 '>
+            <section id='Home' className=' py-10 md:px-10 clip-path-special-movile md:clip-path-special  bg-neutral-950 '>
                 <PrincipalNameImg image={LuisDev} />
             </section>
 
             <section id="Pages" className='py-10'>
                 <MyPages />
             </section>
-            <section className='Skills  md:px-10   clip-path-special-invert-movile md: clip-path-special-invert bg-neutral-950 '>
+            <section className='Skills  md:px-10   clip-path-special-invert-movile md:clip-path-special-invert bg-neutral-950 '>
                 <MySkills skillsLogo={[[html, 'HTML'], [javascript, 'Javascript'], [typescript, 'Typescript'], [php, 'PHP'], [Ccharp, 'C#'], [reactSvg, 'React'], [laravel, 'Laravel'],
                 [node, 'NodeJS'], [vite, 'Vite'], [cssSvg, 'CSS'],
                 [tailwind, 'Tailwind'], [sass, 'Sass'], [materialUi, 'Material Ui'], [mysql, 'MYSQL'], [mongo, 'MongoDB'], [firebase, 'Firebase'], [github, 'Github'], [nextjs, 'NextJs'],
