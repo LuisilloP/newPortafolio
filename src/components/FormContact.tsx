@@ -34,34 +34,40 @@ const FormContact = () => {
     return (
         <form className='flex flex-col gap-5 ' onSubmit={(event) => handleSubmit(event)}>
             <div className=' flex flex-col sm:flex-row gap-5  '>
-                <div className='w-full'>
-                    <label htmlFor="name" className="block mb-2 text-sm font-medium ">Nombre</label>
-                    <input name='name' type="text" id="name" aria-describedby="helper-text-explanation"
+                <div className='relative z-0 w-full mb-6 group'>
+                    <input type="text" name="name" id="name"
                         onChange={(event) => inputHandleChange(event)} onFocus={(event) => clearMessageError(event)}
-                        className="bg-gray-50 border border-gray-300
-                        text-gray-900 text-sm rounded focus:outline-none focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5 " >
-                    </input>
-                    <p className='errors-input text-xs text-red-600 '>{error.name ? error.name : ''}</p>
+                        className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                    <label htmlFor="name"
+                        className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Nombre</label>
                 </div>
-                <div className='w-full'>
-                    <label htmlFor="mail" className="block mb-2 text-sm font-medium ">Correo</label>
-                    <input name='mail' type="mail" id="helper-text" aria-describedby="helper-text-explanation"
+                <div className='relative z-0 w-full mb-6 group'>
+                    <input type="text" name="mail" id="mail"
                         onChange={(event) => inputHandleChange(event)} onFocus={(event) => clearMessageError(event)}
-                        className="bg-gray-50 border border-gray-300
-                         text-gray-900 text-sm rounded focus:outline-none focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5 " >
-                    </input>
-                    <p className='errors-input text-xs text-red-600 '>{error.mail ? error.mail : ''}</p>
+                        className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                    <label htmlFor="mail"
+                        className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Correo</label>
                 </div>
             </div>
-            <div>
-                <label htmlFor="message" className="block mb-2 text-sm font-medium ">Mensaje</label>
-                <textarea name='message' id="message" rows={4}
-                    onChange={(event) => inputHandleChange(event)} onFocus={(event) => clearMessageError(event)}
-                    className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded border border-gray-300 focus:outline-none focus:ring-teal-500 focus:border-teal-500 "></textarea>
-                <p className='errors-input text-xs text-red-600 '>{error.message ? error.message : ''}</p>
+            <div className='relative z-0 w-full mb-6 group'>
+                <textarea
+                    name="message"
+                    id="message"
+                    onChange={(event) => inputHandleChange(event)}
+                    onFocus={(event) => clearMessageError(event)}
+                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" "
+                    required
+                ></textarea>
+                <label
+                    htmlFor="message"
+                    className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Mensaje</label>
             </div>
 
-            <button type='submit' className=" w-full md:w-[10rem] bg-black text-white font-bold py-2 px-4 rounded px] ">
+            <button type='submit' className=" w-full md:w-[10rem] bg-zinc-900 text-white py-2 px-4 text-sm] ">
                 Enviar
             </button>
         </form>
