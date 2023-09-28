@@ -36,7 +36,7 @@ const Header = () => {
                     <li className='md:ml-8 md:my-0 my-7 hover:text-teal-500 donwload-icon-special  '>
                         <a target='_blank'
                             className=' flex w-[10rem] h-[3rem] hover:opacity-[0.9] bg-gray-900 items-center px-3 text-sm gap-2 rounded text-white'
-                            href='https://firebasestorage.googleapis.com/v0/b/imagespages.appspot.com/o/LuisArayaCV.pdf?alt=media&token=50d70acf-1ff0-41ef-9577-df58f064b18a' rel="noreferrer" >
+                            href='https://firebasestorage.googleapis.com/v0/b/portafolioluisdev.appspot.com/o/ArayaLuisCV.pdf?alt=media&token=104eee52-1e9e-4995-bb43-593d23a87eb8&_gl=1*1ef23li*_ga*ODk4OTgwMzY3LjE2OTI3NjYwNTQ.*_ga_CW55HF8NVT*MTY5NTg2OTY2MC4xMC4xLjE2OTU4Njk3NDAuNTQuMC4w' rel="noreferrer" >
                             <ArrowDownTrayIcon className='w-5 dowload-animation ' />
                             <p>Descarga mi cv
                             </p>
