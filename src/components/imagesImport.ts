@@ -1,4 +1,5 @@
-import LuisDev from '../assets/LuisDev.png'
+// import LuisDev from '../assets/LuisDev.png'
+import LuisDevAlter from '../assets/LuisDevAlter.png'
 import reactSvg from '../assets/circle/react.svg'
 import typescript from '../assets/circle/typescript.svg'
 import cypress from '../assets/circle/cypress.svg'
@@ -18,6 +19,29 @@ import materialUi from '../assets/circle/materialUi.svg'
 import php from '../assets/circle/php.svg'
 import laravel from '../assets/circle/laravel.svg'
 import Ccharp from '../assets/circle/Ccharp.svg'
+import Astro from '../assets/circle/astro.svg'
 export const imagesImport = () => {
-    return { LuisDev, reactSvg, typescript, cypress, cssSvg, node, tailwind, html, javascript, mongo, mysql, vite, firebase, github, sass, nextjs, materialUi, php, laravel, Ccharp }
+  return {
+    LuisDevAlter,
+    reactSvg,
+    typescript,
+    cypress,
+    cssSvg,
+    node,
+    tailwind,
+    html,
+    javascript,
+    mongo,
+    mysql,
+    vite,
+    firebase,
+    github,
+    sass,
+    nextjs,
+    materialUi,
+    php,
+    laravel,
+    Ccharp,
+    Astro
+  }
 }
